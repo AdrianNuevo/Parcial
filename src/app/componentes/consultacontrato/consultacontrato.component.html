@@ -1,0 +1,18 @@
+<table *ngIf='contratos && contratos.length'>
+    <thead>
+        <th>identificador</th>
+        <th>Tipo</th>
+        <th>Valor</th>
+        <th>Saldo Pendiente</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let contrato of contratos; index as i ">
+           <th>{{contrato.identificador}}</th> 
+           <th>{{contrato.tipo}}</th>
+           <th>{{contrato.valor}}</th>
+           <th>{{contrato.saldpend}}</th>
+        </tr>
+
+    </tbody>
+
+</table>

@@ -1,0 +1,21 @@
+
+<div>
+    <label>Ingresa id</label>
+    <input type="number" name="identificador" [(ngModel)]="contrato.identificador">
+</div>
+<div>
+    <label>Selecciona tipo de suministro</label>
+        <select name="text" name="tipo" [(ngModel)]="contrato.tipo">
+            <option value="equipo">Equipo</option>
+            <option value="aseo">Aseo</option>
+            <option value="papeleria">Papeleria</option>
+        </select>  
+</div>
+<div>
+    <label>Introduzca valor del contrato</label>
+    <input type="number" name="valor" [(ngModel)]="contrato.valor">
+</div>
+<div class="botones">
+    <button (click)= "agregar()" >Agregar</button>
+    <button type="reset"></button>
+</div>
